@@ -71,6 +71,7 @@ cd seo-command-center
 ### 2. Install the Google Search Console MCP server
 
 ```bash
+git clone https://github.com/AminForou/mcp-gsc.git mcp-gsc
 cd mcp-gsc
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
