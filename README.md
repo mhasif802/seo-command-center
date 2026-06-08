@@ -53,7 +53,7 @@ A single `output/dashboard.html` file — open it once in a browser, keep it pin
 - [Claude Code](https://claude.ai/code) installed
 - A [Google Cloud](https://console.cloud.google.com) project with the Search Console API enabled (for the GSC MCP)
 - Google Analytics 4 property
-- [DataForSEO](https://dataforseo.com) account (free trial available)
+- [DataForSEO](https://dataforseo.com/?aff=285201) account (free trial available)
 - Node.js ≥ 18 (for the DataForSEO MCP via `npx`)
 - Python ≥ 3.10 (for the GSC MCP server)
 
