@@ -1,0 +1,47 @@
+name: Feature Request
+description: Suggest a new skill, dashboard panel, or improvement.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for a new SEO skill or dashboard improvement? Describe it below.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: What type of feature?
+      options:
+        - New skill (slash command)
+        - Dashboard improvement
+        - New MCP integration
+        - New data source
+        - Reporting improvement
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      placeholder: I find myself manually checking X every week and it would be useful to automate...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution
+      placeholder: A new /rank-tracker skill that... / A new tab in the dashboard that shows...
+    validations:
+      required: true
+
+  - type: textarea
+    id: mcps
+    attributes:
+      label: Which MCPs / data sources would it use?
+      placeholder: DataForSEO SERP API + GSC...
+    validations:
+      required: false

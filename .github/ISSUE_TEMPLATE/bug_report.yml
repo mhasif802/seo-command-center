@@ -1,0 +1,59 @@
+name: Bug Report
+description: A skill returned wrong data, the dashboard broke, or an MCP call failed.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. The more detail you include, the faster it can be fixed.
+
+  - type: input
+    id: skill
+    attributes:
+      label: Which skill?
+      description: e.g. /weekly-seo-report, /ctr-rescue
+      placeholder: /weekly-seo-report
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe what went wrong. Include any error messages from the Claude Code terminal.
+      placeholder: The skill ran but the dashboard showed no data / the MCP call returned an error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: I expected the Overview tab to update with fresh GSC data...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mcp
+    attributes:
+      label: Which MCP failed (if applicable)?
+      options:
+        - Google Search Console
+        - Google Analytics
+        - DataForSEO
+        - Not MCP-related
+        - Unknown
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Claude Code version
+      placeholder: |
+        OS: macOS 14.5
+        Claude Code: 1.x.x
+    validations:
+      required: false

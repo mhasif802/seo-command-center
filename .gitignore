@@ -1,0 +1,36 @@
+# MCP config contains API credentials — never commit
+.mcp.json
+
+# Claude Code local settings (machine-specific paths and session permissions)
+.claude/settings.local.json
+.claude/settings.json
+
+# Google credentials — never commit these
+client_secret*.json
+mcp-gsc/client_secrets.json
+mcp-gsc/token*.json
+mcp-gsc/.credentials/
+*.credentials.json
+
+# Environment variables
+.env
+.env.local
+
+# Python
+mcp-gsc/venv/
+mcp-gsc/__pycache__/
+mcp-gsc/*.pyc
+mcp-gsc/.python-version
+
+# Node
+node_modules/
+
+# Generated reports (optional — remove these lines if you want reports tracked in git)
+*.report.*.md
+serp-snapshot.json
+serp-history.jsonl
+output/report.html
+
+# OS
+.DS_Store
+Thumbs.db

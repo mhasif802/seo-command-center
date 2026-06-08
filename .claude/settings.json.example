@@ -1,0 +1,7 @@
+{
+  "enabledMcpjsonServers": [
+    "google-analytics",
+    "google-search-console",
+    "dataforseo"
+  ]
+}
